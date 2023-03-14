@@ -1,16 +1,11 @@
-<script lang="ts">
-	import type { AidRequest } from '../../../types/aidRequest.type';
-	export let request: AidRequest = {
-		title: '',
-		description: ''
-	};
-	function handleSubmit() {
-		console.log(request);
-	}
+<script>
+  import RichTextComposer from '$lib/components/RichTextComposer.svelte';
+  import '../../../global.css';
 </script>
 
-<form on:submit|preventDefault={handleSubmit}>
-	<input bind:value={request.title} />
-	<input bind:value={request.description} />
-	<button />
-</form>
+<h1>Welcome to SvelteKit</h1>
+<p>
+  Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a>
+  to read the documentation
+</p>
+<RichTextComposer />
