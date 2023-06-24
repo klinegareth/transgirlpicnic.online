@@ -1,42 +1,41 @@
-<script>
-</script>
+<main>
+	<nav>
+		<a href="/">home</a>
+		<a href="/photos">photos</a>
+		<a href="/events">events</a>
+	</nav>
 
-<nav>
-	<a href="/">home</a>
-	<a href="/bulletin">bulletin</a>
-	<a href="/events">events</a>
-</nav>
-
-<div class="content"><slot /></div>
+	<div class="content"><slot /></div>
+</main>
 
 <style>
+	main {
+		block-size: 100dvh;
+		display: flex;
+		flex-direction: column;
+	}
 	.content {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		justify-content: center;
+		align-items: center;
+		block-size: 100%;
 	}
 	nav {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-around;
-		width: 100%;
-		height: 5vh;
 		background: #dee2ff;
+		inline-size: 100%;
 	}
 	a {
+		line-height: 2em;
 		text-decoration: none;
 		color: #424b5c;
 		font-family: 'Inter', sans-serif;
 		font-weight: 500;
-		font-size: 1.2vw;
-		width: 100%;
-		height: 100%;
-		margin: 0;
-		padding: 0;
+		font-size: 1.8em;
 		text-align: center;
-		line-height: 5vh;
-		border: 2px;
 	}
 </style>

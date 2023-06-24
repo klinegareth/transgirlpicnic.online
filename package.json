@@ -31,6 +31,15 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"svelte-lexical": "^0.2.0"
+		"@aws-sdk/client-s3": "^3.359.0",
+		"@aws-sdk/types": "^3.357.0",
+		"@fortawesome/free-solid-svg-icons": "^6.4.0",
+		"@fortawesome/svelte-fontawesome": "^0.2.0",
+		"@sveltejs/adapter-node": "^1.2.4",
+		"dotenv": "^16.0.3",
+		"mime-types": "^2.1.35",
+		"minio": "^7.1.1",
+		"svelte-lexical": "^0.2.0",
+		"uuidv4": "^6.2.13"
 	}
 }

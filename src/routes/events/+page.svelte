@@ -1,29 +1,16 @@
 <script>
-    import '@event-calendar/core/index.css';
-	import Calendar from '@event-calendar/core';
+	import '@event-calendar/core/index.css';
 	import TimeGrid from '@event-calendar/time-grid';
 
 	let plugins = [TimeGrid];
 	let options = {
-		view: 'timeGridWeek',
+		view: 'timeGridWeek'
 	};
+
+	import Instagram from '$lib/components/Instagram.svelte';
 </script>
 
-<div class="calendar">
-	<Calendar {plugins} {options} />
-</div>
+<Instagram />
 
 <style>
-    .calendar {
-            background: white;
-            height: 75vh;
-            width: 75vw;
-            overflow: scroll;
-            display: flex;
-            align-items: start;
-            justify-content: center;
-            padding: 0;
-            margin: 0;
-            border-radius: 8px;
-        } 
 </style>
